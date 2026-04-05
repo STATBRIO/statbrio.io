@@ -66,13 +66,13 @@ export default function Navbar() {
               transition={{ type: 'spring', stiffness: 400, damping: 15 }}
             >
               <img
-                src="/logo-icon.png"
+                src="./logo-icon.png"
                 alt="Statbrio icon"
                 style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
               />
             </motion.div>
 
-            <img src="/logo-text.png" alt="Statbrio" className="nav-brand-text" />
+            <img src="./logo-text.png" alt="Statbrio" className="nav-brand-text" />
           </Link>
 
           <nav className="desktop-nav">

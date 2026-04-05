@@ -46,13 +46,13 @@ export default function Footer() {
           <div>
             <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 0, textDecoration: 'none', marginBottom: 20 }}>
               <img
-                src="/logo-icon.png"
+                src="./logo-icon.png"
                 alt="Statbrio icon"
                 style={{ height: 38, width: 'auto', display: 'block', borderRadius: 12, boxShadow: '0 8px 22px rgba(13,26,60,0.08)' }}
                 onError={e => { e.target.style.display = 'none'; }}
               />
               <img
-                src="/logo-text.png"
+                src="./logo-text.png"
                 alt="Statbrio"
                 style={{ height: 22, width: 'auto', display: 'block' }}
                 onError={e => {

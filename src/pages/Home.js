@@ -497,7 +497,7 @@ function MascotWithRings() {
   return (
     <div className="mascot-shell">
       <img
-        src="/mascot.png"
+        src="./mascot.png"
         alt="Statbrio Mascot"
         className="mascot-image"
       />
@@ -552,7 +552,7 @@ export default function Home() {
 
     const probeClientLogo = (index) => new Promise(resolve => {
       const img = new Image();
-      const src = `/Client-${index}.png`;
+      const src = `./Client-${index}.png`;
 
       img.onload = () => resolve({ id: index, label: `Client ${index}`, img: src });
       img.onerror = () => resolve(null);
