@@ -2,6 +2,7 @@
   "name": "statbrio",
   "version": "1.0.0",
   "description": "Statbrio Website",
+  "homepage": ".",
   "author": "Statbrio",
   "private": true,
   "dependencies": {
