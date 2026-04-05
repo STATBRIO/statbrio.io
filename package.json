@@ -2,7 +2,7 @@
   "name": "statbrio",
   "version": "1.0.0",
   "description": "Statbrio Website",
-  "homepage": ".",
+  "homepage": "https://statbrio.com/",
   "author": "Statbrio",
   "private": true,
   "dependencies": {
