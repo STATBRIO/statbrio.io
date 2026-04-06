@@ -2,12 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
+    <!-- ✅ ADD THIS FIRST — SPA refresh fix -->
+    <script>
+      (function (l) {
+        if (l.search[1] === 'p') {
+          var decoded = l.search.slice(1).split('&').reduce(function (acc, s) {
+            var pair = s.split('=');
+            acc[pair[0]] = pair.slice(1).join('=').replace(/~and~/g, '&');
+            return acc;
+          }, {});
+          if (decoded.p) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) +
+              (decoded.p || '') +
+              (decoded.q ? '?' + decoded.q : '') +
+              l.hash
+            );
+          }
+        }
+      })(window.location);
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0a0a0f" />
-    <meta
-      name="description"
-      content="Statbrio - AI Solutions, Automation & Software Development for Businesses"
-    />
+    <meta name="description" content="Statbrio - AI Solutions, Automation & Software Development for Businesses" />
     <title>Statbrio - AI Solutions & Software Development</title>
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/logo-icon.png" />
     <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/logo-icon.png" />
